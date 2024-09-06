@@ -1,0 +1,302 @@
+body{
+  background-color: #3C3D37;
+  color:rgb(243, 243, 182);
+}
+
+/* Header styling logo*/
+
+.logo-image {
+  width: 70px; /* Adjust size as needed */
+  height: auto;
+}
+
+.logo h1 {
+  font-size: 1.5rem; /* Adjust as needed */
+}
+
+
+
+/* Styling for navigation links */
+.nav-link {
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 10px 20px; /* Adjust padding for links */
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  text-decoration: none; /* Remove underline */
+  margin-right: 10px; /* Space between links */
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+  color: #404040 !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease 0s;
+}
+
+/* Additional optional styles to align and space elements */
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 10px; /* Adjust spacing as needed */
+}
+
+
+/* Portfolio */
+.portfolio {
+  padding: 40px 0;
+}
+
+.project img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.filters button {
+  margin-bottom: 10px;
+}
+
+
+
+/* About  */
+
+
+.about-image img {
+  max-width: 100%;
+ 
+}
+
+.about-content h2, .about-content h3 {
+  color: rgb(232, 232, 219);
+}
+
+.contact-info li {
+  font-size: 16px;
+  color: rgb(243, 243, 182);
+}
+
+.interests li {
+  font-size: 18px;
+  color: rgb(243, 243, 182);
+}
+
+
+.contact-info i {
+  margin-right: 10px;
+  color: #a3a8ac; /* Icon color */
+}
+
+
+.about-container {
+  margin-top: 20px;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon i {
+  color: #7ca8d4;
+}
+
+.service h3 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.service p {
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+/* contact */
+/* Main Contact Form Container */
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #3C3D37; /* Dark background */
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+  flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
+  margin-left: 20px; /* Adds space from the left side of the screen */
+}
+
+/* Headings and Paragraphs */
+.contact-form h1, .contact-form p {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.contact-form h1 {
+  margin-bottom: 5px;
+}
+
+.contact-form p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* Left Side - Contact Info */
+.contact-info {
+  max-width: 35%;
+  margin-right: 40px; /* Adds more space between contact info and form */
+  color: #fff;
+  align-self: flex-start; /* Aligns the contact info to the top */
+}
+
+/* Contact Info Text */
+.contact-info h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-info p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+/* Right Side - Form */
+.contact-form form {
+  max-width: 55%; /* Controls form width for the right side */
+  width: 100%;
+}
+
+/* Input, Textarea, and Button Styling */
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+  font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #333;
+}
+
+/* Textarea Specific Styling */
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Button Styling */
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  display: block;
+  margin: 20px auto 0;
+}
+
+/* Button Hover Effect */
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .contact-info, .contact-form form {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contact-form h1, .contact-form p {
+    text-align: center;
+  }
+}
+
+/*resume*/
+.stack {
+  margin-top: 20px;
+}
+
+.stack .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 10px;
+}
+
+.stack .item img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.stack .item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #efefef;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-top: 10px;
+}
